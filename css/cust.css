@@ -1,0 +1,148 @@
+#masthead {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 10px 0;
+}
+
+ul#primary-menu {
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.main-navigation a {
+	color: #333;
+	font-weight: 700;
+}
+
+.main-navigation a:hover {
+	color: #0073aa;
+}
+
+h1 {
+	text-align: center;
+}
+
+.create_product_form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 2em;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+}
+
+.create_product_form input[type="text"],
+.create_product_form input[type="date"],
+.create_product_form select,
+.create_product_form input[type="submit"],
+.create_product_form input[type="file"],
+.create_product_form button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	box-sizing: border-box; 
+}
+
+.create_product_form input[type="submit"],
+.create_product_form button {
+	background-color: #5CB85C;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.create_product_form input[type="submit"]:hover,
+.create_product_form button:hover {
+	background-color: #4CAE4C; 
+}
+
+.create_product_form input[type="submit"]:active,
+.create_product_form button:active {
+	background-color: #5CB85C; 
+}
+
+.create_product_form input[type="file"] {
+	border: none;
+}
+
+.create_product_form select {
+	appearance: none;
+	background: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat 95% 50%;
+	background-color: #fff; 
+	cursor: pointer;
+}
+
+.create_product_form select:hover {
+	background-color: #f7f7f7;
+}
+
+.create_product_form input[type="text"]:focus,
+.create_product_form input[type="date"]:focus,
+.create_product_form select:focus {
+	outline: none;
+	border-color: #5CB85C;
+}
+
+.create_product_form button[type="button"] {
+	background-color: #f44336;
+}
+
+.create_product_form button[type="button"]:hover {
+	background-color: #e53935;
+}
+
+.products-row {
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.product {
+	width: calc(33.3333% - 30px);
+	margin: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	background: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.product:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+	max-width: 100%!important;
+  display: block;
+  object-fit: cover;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.product h2 {
+	padding: 0 15px;
+	margin: 10px 0;
+	font-size: 18px;
+	color: #333;
+}
+
+.product .price {
+	padding: 0 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #333;
+}
+
+.product .date,
+.product .type {
+	padding: 0 15px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #666;
+}
